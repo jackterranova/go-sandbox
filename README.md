@@ -1,4 +1,4 @@
-[go-intro-02]() 
+[go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
 
 # Go Sandbox
 
