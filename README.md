@@ -1,3 +1,5 @@
+New in this branch => [go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
+
 # Go Sandbox
 
 A repo for learning Go based on the docs from https://golang.org.
@@ -115,7 +117,7 @@ Additonally, it is recommended that you set your `$PATH` variable to include `$G
 
 1. `mkdir $GOPATH/src/github.com/<your github user name>/go-sandbox/hello`. <-- if you plan to use github.com for your remote
 
-2. Create `hello.go`...
+2. Create `hello.go` in the new directory ...
 
 ```
 package main //<- must use `main` when creating executable
