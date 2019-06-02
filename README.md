@@ -48,13 +48,13 @@ Go retains the package concept, but
         hello
         goodbye
     src/
-        github.com/jackterranova/				# <-- repo at github.com
-                                hello/      	# <-- begin dir structure under source control 
-                                     hello.go 	# ==> maps to https://github.com/jackterranova/hello/hello.go
+        github.com/jackterranova/               # <-- repo at github.com
+                                hello/.         # <-- begin dir structure under source control 
+                                     hello.go.  # ==> maps to https://github.com/jackterranova/hello/hello.go
 
-        bitbucket.org/jack-terranova/			# <-- repo at bitbucket.org
-                                goodbye/ 		# <-- begin dir structure under source control 
-                                     goodbye.go. # ==> maps to https://bitbucket.org/jack-terranova/goodbye/goodbye.go
+        bitbucket.org/jack-terranova/           # <-- repo at bitbucket.org
+                                goodbye/        # <-- begin dir structure under source control 
+                                     goodbye.go # ==> maps to https://bitbucket.org/jack-terranova/goodbye/goodbye.go
 ```
 
 __Note the fully qualified package names, including the source control remote server__
@@ -62,16 +62,16 @@ __Note the fully qualified package names, including the source control remote se
 Contrast this with how a typical Java project might be set up ...
 
 ```bash
-~/MyJavaApp/  		# <-- repo somewhere (?)
+~/MyJavaApp/        # <-- repo somewhere (?)
 	build/
 		...
-	src/			# <-- begin dir structure under source control 
+	src/            # <-- begin dir structure under source control 
 		com/example/tools
 					Utils.java
-~/MyOtherJavaApp/  	# <-- repo somewhere (?)
+~/MyOtherJavaApp/.  # <-- repo somewhere (?)
 	build/
 		...
-	src/			# <-- begin dir structure under source control 
+	src/            # <-- begin dir structure under source control 
 		org/example/models/
 					User.java					
 ```
