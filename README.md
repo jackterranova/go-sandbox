@@ -10,7 +10,6 @@ But you can follow a step-wise path by examining each of the repo's branches ind
 
 Each subsequent branch builds on the previous, layering more Go information and features. 
 
-
 ## Go Primer for Java Wranglers
 
 ### Go code organization - `$GOPATH`
@@ -75,7 +74,7 @@ Contrast this with how a typical Java project might be set up ...
                 ...
            src/            # <-- begin dir structure under source control 
                 org/example/models/
-                                 User.java					
+                                 User.java                  
 ```
 
 __The first project might be located at `github.com/jackterranova/MyJavaApp` with `src/com/example/tools` under source control__  
@@ -126,7 +125,7 @@ package main //<- must use `main` when creating executable
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, world.")
+    fmt.Println("Hello, world.")
 }
 ```
 
@@ -140,6 +139,8 @@ Huh?
 
 > __When writing Go excecutables, you must use `package main`.  Using any other package name will make your compile-output a non-executable library.__  
 
+> __`main` executables are an exception, but Go packages are generally declared using `package` followed by the last element of a fully qualified package path.  Packages are imported by clients by declaring `import` followed by the fully qualified path as defined in the directory structure.__  
+>
+> __For example, `reverse.go` might be in `package stringutil`, but might be imported as `import github.com/<your github user name>/go-sandbox/stringutil`__
+
 __Although `hello.go` declares `package main`, the source is physically located locally under `$GOPATH/src/github.com/<your github user name>/go-sandbox/hello`.  Remotely, the source is located at https://github.com/<your github user name>/go-sandbox/hello__
-
-
