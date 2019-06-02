@@ -1,4 +1,4 @@
-[go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
+New in this branch => [go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
 
 # Go Sandbox
 
@@ -6,7 +6,7 @@ A repo for learning Go based on the docs from https://golang.org.
 
 The master branch of this repo represents an all-in-one view of learning Go.  
 
-But you can follow a step-wise path by examining each of the repo's branches individually, starting with branch `go-intro-01`.  
+But you can follow a step-wise path by examining each of the repo's branches individually, starting with branch [go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-01).  
 
 Each subsequent branch builds on the previous, layering more Go information and features. 
 
