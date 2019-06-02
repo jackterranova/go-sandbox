@@ -1,5 +1,3 @@
-New in this branch => [go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
-
 # Go Sandbox
 
 A repo for learning Go based on the docs from https://golang.org.
