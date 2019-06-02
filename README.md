@@ -62,18 +62,18 @@ __Note the fully qualified package names, including the source control remote se
 Contrast this with how a typical Java project might be set up ...
 
 ```bash
-~/MyJavaApp/        # <-- repo somewhere (?)
-	build/
-		...
-	src/            # <-- begin dir structure under source control 
-		com/example/tools
-					Utils.java
-~/MyOtherJavaApp/.  # <-- repo somewhere (?)
-	build/
-		...
-	src/            # <-- begin dir structure under source control 
-		org/example/models/
-					User.java					
+~/MyJavaApp/               # <-- repo somewhere (?)
+           build/
+                ...
+           src/            # <-- begin dir structure under source control 
+                com/example/tools/
+                                 Utils.java
+~/MyOtherJavaApp/          # <-- repo somewhere (?)
+           build/
+                ...
+           src/            # <-- begin dir structure under source control 
+                org/example/models/
+                                 User.java					
 ```
 
 __The first project might be located at `github.com/jackterranova/MyJavaApp` with `src/com/example/tools` under source control__  
