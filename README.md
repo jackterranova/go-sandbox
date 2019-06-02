@@ -138,6 +138,8 @@ Huh?
 
 > __When writing Go excecutables, you must use `package main`.  Using any other package name will make your compile-output a non-executable library.__  
 
+> __`main` executables are an exception, but Go packages are generally declared using `package` followed by the last element of a fully qualified package path.  Packages are imported by clients by declaring `import` followed by the fully qualified path as defined in the directory structure.__  
+>
+> __For example, `reverse.go` might be in `package stringutil`, but might be imported as `import github.com/<your github user name>/go-sandbox/stringutil`__
+
 __Although `hello.go` declares `package main`, the source is physically located locally under `$GOPATH/src/github.com/<your github user name>/go-sandbox/hello`.  Remotely, the source is located at https://github.com/<your github user name>/go-sandbox/hello__
-
-
