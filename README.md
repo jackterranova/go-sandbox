@@ -1,13 +1,14 @@
+New in this branch => [go-intro-02](https://github.com/jackterranova/go-sandbox/blob/go-intro-02/go-intro-02.md) 
+
 # Go Sandbox
 
 A repo for learning Go based on the docs from https://golang.org.
 
 The master branch of this repo represents an all-in-one view of learning Go.  
 
-But you can follow a step-wise path by examining each of the repo's branches individually, starting with branch `go-intro-01`.  
+But you can follow a step-wise path by examining each of the repo's branches individually, starting with branch [go-intro-01](https://github.com/jackterranova/go-sandbox/tree/go-intro-01).  
 
 Each subsequent branch builds on the previous, layering more Go information and features. 
-
 
 ## Go Primer for Java Wranglers
 
@@ -73,7 +74,7 @@ Contrast this with how a typical Java project might be set up ...
                 ...
            src/            # <-- begin dir structure under source control 
                 org/example/models/
-                                 User.java					
+                                 User.java                  
 ```
 
 __The first project might be located at `github.com/jackterranova/MyJavaApp` with `src/com/example/tools` under source control__  
@@ -116,7 +117,7 @@ Additonally, it is recommended that you set your `$PATH` variable to include `$G
 
 1. `mkdir $GOPATH/src/github.com/<your github user name>/go-sandbox/hello`. <-- if you plan to use github.com for your remote
 
-2. Create `hello.go`...
+2. Create `hello.go` in the new directory ...
 
 ```
 package main //<- must use `main` when creating executable
@@ -124,7 +125,7 @@ package main //<- must use `main` when creating executable
 import "fmt"
 
 func main() {
-	fmt.Println("Hello, world.")
+    fmt.Println("Hello, world.")
 }
 ```
 
@@ -138,6 +139,8 @@ Huh?
 
 > __When writing Go excecutables, you must use `package main`.  Using any other package name will make your compile-output a non-executable library.__  
 
+> __`main` executables are an exception, but Go packages are generally declared using `package` followed by the last element of a fully qualified package path.  Packages are imported by clients by declaring `import` followed by the fully qualified path as defined in the directory structure.__  
+>
+> __For example, `reverse.go` might be in `package stringutil`, but might be imported as `import github.com/<your github user name>/go-sandbox/stringutil`__
+
 __Although `hello.go` declares `package main`, the source is physically located locally under `$GOPATH/src/github.com/<your github user name>/go-sandbox/hello`.  Remotely, the source is located at https://github.com/<your github user name>/go-sandbox/hello__
-
-
