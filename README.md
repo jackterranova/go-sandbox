@@ -44,17 +44,17 @@ Go retains the package concept, but
 
 ```bash
 ~/go/
-	bin/
-		hello
-		goodbye
-	src/
-		github.com/jackterranova/				# <-- repo at github.com
-								hello/      	# <-- begin dir structure under source control 
-									hello.go 	# ==> maps to https://github.com/jackterranova/hello/hello.go
+    bin/
+        hello
+        goodbye
+    src/
+        github.com/jackterranova/				# <-- repo at github.com
+                                hello/      	# <-- begin dir structure under source control 
+                                     hello.go 	# ==> maps to https://github.com/jackterranova/hello/hello.go
 
-		bitbucket.org/jack-terranova/			# <-- repo at bitbucket.org
-								goodbye/ 		# <-- begin dir structure under source control 
-									goodbye.go. # ==> maps to https://bitbucket.org/jack-terranova/goodbye/goodbye.go
+        bitbucket.org/jack-terranova/			# <-- repo at bitbucket.org
+                                goodbye/ 		# <-- begin dir structure under source control 
+                                     goodbye.go. # ==> maps to https://bitbucket.org/jack-terranova/goodbye/goodbye.go
 ```
 
 __Note the fully qualified package names, including the source control remote server__
