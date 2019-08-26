@@ -34,4 +34,21 @@ func main() {
 	default:
 		fmt.Println("Good evening.")
 	}
+
+	// using switch to check on a variables type
+	var i interface{}
+	//i = "test"
+	//i = 100
+	//i = time.Now()
+
+	switch v := i.(type) {
+	case int:
+		fmt.Printf("Twice %v is %v\n", v, v*2)
+	case string:
+		fmt.Printf("%q is %v bytes long\n", v, len(v))
+	case time.Time:
+		fmt.Println("Time type")
+	default:
+		fmt.Printf("I don't know about type %T!\n", v)
+	}
 }
