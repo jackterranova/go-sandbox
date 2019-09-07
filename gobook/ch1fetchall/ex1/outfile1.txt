@@ -1,0 +1,2 @@
+0.333869s  680365 https://en.wikipedia.org/wiki/NASA
+0.33s elapsed
